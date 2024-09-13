@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    nav > a {
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+    header i#burguer{
+        display: block;
+        width: 250px;
+        text-align: center;
+        background-color: #56201E;
+        color: white;
+        padding: 5px 0px;
+        margin-bottom: 5px;
+        border-top: 1px solid white;
+        border-radius: 10px 0px 10px 0px;
+        cursor: pointer;
+    }
+    header i#burguer:hover{
+        background-color: white;
+        color: black;
+        border-top: 1px solid black;
+    }
+    form{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    input#sub, #reset{
+        flex: 0 1;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    header #burguer{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+}
+@media screen and (min-width: 992px) {
+    header #burguer{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+}
