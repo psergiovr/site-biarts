@@ -11,9 +11,7 @@
 <body onresize="mudouTela()">
     <header>
         <h1>Biart's Atelier</h1>
-        <div class="text-block">
-            <h3>Sua</h3>
-        </div>
+            <h3> Sua</h3>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
         <nav id="item">
             <a href="#">Opção 1</a>
@@ -56,6 +54,15 @@
                     item.style.display = 'block'
             }
         }
+
+        function typeWriter(elemento){
+            const textoArray = elemento.innerHTML.split('')
+            elemento.innerHTML = ''
+            textoArray.forEach((letra,i) => {setTimeout(function(){elemento.innerHTML += letra}, 600 * i)})
+        }
+
+        const titulo = document.querySelector('h3')
+        typeWriter(titulo)
     </script>
 </body>
 </html>
