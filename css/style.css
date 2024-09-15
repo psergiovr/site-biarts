@@ -35,8 +35,6 @@ header > div.text-block > h3{
     overflow: hidden;
 }
 .text-block::after{
-    display: block;
-    margin: auto;
     content: "";
     position: absolute;
     top: 0;
